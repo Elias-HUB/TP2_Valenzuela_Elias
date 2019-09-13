@@ -1,0 +1,13 @@
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Negocio.exe.config
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Negocio.exe
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Negocio.pdb
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.Properties.Resources.resources
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.GenerateResource.cache
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.exe
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.pdb
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.exe
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.pdb
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.exe.config
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.CopyComplete

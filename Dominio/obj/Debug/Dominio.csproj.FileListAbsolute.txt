@@ -1,0 +1,9 @@
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\bin\Debug\Dominio.exe.config
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\bin\Debug\Dominio.exe
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\bin\Debug\Dominio.pdb
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.Properties.Resources.resources
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csproj.GenerateResource.cache
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.exe
+G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.pdb
