@@ -7,3 +7,12 @@ G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csproj.GenerateResou
 G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.exe
 G:\Proyectos\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\bin\Debug\Dominio.exe.config
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\bin\Debug\Dominio.exe
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.Properties.Resources.resources
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csproj.GenerateResource.cache
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.exe
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Dominio\obj\Debug\Dominio.pdb

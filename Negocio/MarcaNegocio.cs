@@ -20,7 +20,7 @@ namespace Negocio
             SqlDataReader Lector;
             try
             {
-                Conexion.ConnectionString = "data source=.\\FRGP_LABO; initial catalog =CATALOGO_DB; integrated security=sspi";
+                Conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
                 Comando.CommandType = System.Data.CommandType.Text;
                 Comando.CommandText = "Select M.Id, M.Descripcion from MARCAS as M";
                 Comando.Connection = Conexion;

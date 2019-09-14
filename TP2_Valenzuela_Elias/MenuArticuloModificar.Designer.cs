@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.TBoxCodigo = new System.Windows.Forms.TextBox();
@@ -49,16 +49,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnAgregar
+            // BtnModificar
             // 
-            this.BtnAgregar.Enabled = false;
-            this.BtnAgregar.Location = new System.Drawing.Point(536, 250);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(83, 36);
-            this.BtnAgregar.TabIndex = 69;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.UseVisualStyleBackColor = true;
-            this.BtnAgregar.Click += new System.EventHandler(this.ClickAgregar);
+            this.BtnModificar.Enabled = false;
+            this.BtnModificar.Location = new System.Drawing.Point(536, 250);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(83, 36);
+            this.BtnModificar.TabIndex = 69;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.ClickModificar);
             // 
             // BtnCancelar
             // 
@@ -236,7 +236,7 @@
             this.Controls.Add(this.CboxCategoria);
             this.Controls.Add(this.CboxMarca);
             this.Controls.Add(this.TboxImagen);
-            this.Controls.Add(this.BtnAgregar);
+            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.TBoxCodigo);
@@ -262,7 +262,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BtnAgregar;
+        private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox TBoxCodigo;

@@ -20,7 +20,7 @@ namespace Negocio
             SqlDataReader Lector;
             try
             {
-                Conexion.ConnectionString = "data source=.\\FRGP_LABO; initial catalog =CATALOGO_DB; integrated security=sspi";
+                Conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
                 Comando.CommandType = System.Data.CommandType.Text;
                 Comando.CommandText = "Select a.Id, a.Codigo,a.Nombre,a.Descripcion,M.id, M.Descripcion, c.Id,  c.Descripcion, a.Imagen, a.Precio from ARTICULOS as A inner join MARCAS as M on a.IdMarca = M.Id inner join CATEGORIAS as c on a.IdMarca = c.Id";
                 Comando.Connection = Conexion;
@@ -63,7 +63,7 @@ namespace Negocio
 
             try
             {
-                conexion.ConnectionString = "data source=.\\FRGP_LABO; initial catalog =CATALOGO_DB; integrated security=sspi";
+                conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.Connection = conexion;
                 comando.CommandText = "delete ARTICULOS where Id = '" + Id + "'";
@@ -90,10 +90,10 @@ namespace Negocio
 
             try
             {
-                conexion.ConnectionString = "data source=.\\FRGP_LABO; initial catalog =CATALOGO_DB; integrated security=sspi";
+                conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.Connection = conexion;
-                comando.CommandText = "update ARTICULOS set Codigo = '@Codigo' where ID = '@ID';update ARTICULOS set Nombre = '@Nombre' where ID = '@ID';update ARTICULOS set Descripcion = '@Desc' where ID = '@ID';update ARTICULOS set IdMarca = '@IdMarca' where ID = '@ID';update ARTICULOS set IdCategoria = '@IdCategoria' where ID = '@ID';update ARTICULOS set Imagen = '@Imagen' where ID = '@ID';update ARTICULOS set Precio = '@Precio' where ID = '@ID'";
+                comando.CommandText = "update ARTICULOS set Codigo = @Codigo where ID = '" + articulo.ID+ "';update ARTICULOS set Nombre = @Nombre where ID = '" + articulo.ID + "';update ARTICULOS set Descripcion = @Desc where ID = '" + articulo.ID + "';update ARTICULOS set IdMarca =@IdMarca where ID = '" + articulo.ID + "';update ARTICULOS set IdCategoria = @IdCategoria where ID = '" + articulo.ID + "';update ARTICULOS set Imagen = @Imagen where ID = '" + articulo.ID + "';update ARTICULOS set Precio = @Precio where ID = '" + articulo.ID + "'";
                 comando.Parameters.Clear();
                 comando.Parameters.AddWithValue("@Codigo", articulo.Codigo);
                 comando.Parameters.AddWithValue("@Nombre", articulo.Nombre);
@@ -102,7 +102,6 @@ namespace Negocio
                 comando.Parameters.AddWithValue("@IdCategoria", articulo.Categoria.Id);
                 comando.Parameters.AddWithValue("@Imagen", articulo.Imagen);
                 comando.Parameters.AddWithValue("@Precio", articulo.Precio);
-                comando.Parameters.AddWithValue("@ID", articulo.ID);
 
                 comando.Connection = conexion;
                 conexion.Open();
@@ -125,7 +124,7 @@ namespace Negocio
 
             try
             {
-                conexion.ConnectionString = "data source=.\\FRGP_LABO; initial catalog =CATALOGO_DB; integrated security=sspi";
+                conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.Connection = conexion;
                 comando.CommandText = "Insert into ARTICULOS values ( @Codigo,@Nombre, @Desc, @IdMarca, @IdCategoria, @Imagen, @Precio)";
@@ -162,7 +161,7 @@ namespace Negocio
             SqlDataReader Lector;
             try
             {
-                Conexion.ConnectionString = "data source=.\\FRGP_LABO; initial catalog =CATALOGO_DB; integrated security=sspi";
+                Conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = "Select a.Id, a.Codigo,a.Nombre,a.Descripcion,(Select MARCAS.Id from MARCAS where MARCAS.Id = A.IdMarca) AS MarcaID,(Select MARCAS.Descripcion from MARCAS where MARCAS.Id = A.IdMarca)as MarcaDescripcion,(Select CATEGORIAS.Id from CATEGORIAS where CATEGORIAS.Id = A.IdMarca)as CategoriaID,(Select CATEGORIAS.Descripcion from CATEGORIAS where CATEGORIAS.Id = A.IdMarca)as CategoriaDescripcion,a.Imagen, a.Precio from ARTICULOS as A where a.Codigo ='"+ busqueda+"'";
                 comando.Connection = Conexion;

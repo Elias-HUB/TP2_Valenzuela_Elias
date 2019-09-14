@@ -11,3 +11,16 @@ G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.pdb
 G:\Proyectos\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.exe.config
 G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
 G:\Proyectos\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\bin\Debug\Negocio.exe.config
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\bin\Debug\Negocio.exe
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.exe
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.pdb
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\bin\Debug\Dominio.exe.config
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.Properties.Resources.resources
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.GenerateResource.cache
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.exe
+C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\Negocio\obj\Debug\Negocio.pdb

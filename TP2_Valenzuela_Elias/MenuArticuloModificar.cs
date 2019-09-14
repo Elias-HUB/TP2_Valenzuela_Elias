@@ -14,6 +14,7 @@ namespace TP2_Valenzuela_Elias
 {
     public partial class MenuArticuloModificar : Menu
     {
+        private List<Articulo> ArticuloGuardar;
         public MenuArticuloModificar()
         {
             InitializeComponent();
@@ -41,15 +42,21 @@ namespace TP2_Valenzuela_Elias
                     CboxCategoria.DataSource = categoriaNegocio.Listar();
                     CboxMarca.Text = Lista[0].Marca.Descripcion;
                     CboxCategoria.Text = Lista[0].Categoria.Descripcion;
+
+                    // despues de pasala
+                    // CboxCategoria.valuemenber = "Id";
+                    // CboxCategoria.displaymenber = "";
+
                     TBoxPrecio.Text = Convert.ToString(Lista[0].Precio);
                     PBoxArticulo.ImageLocation = Lista[0].Imagen;
-                    BtnAgregar.Enabled = true;
+                    BtnModificar.Enabled = true;
                     TBoxDescripcion.Enabled = true;
                     TBoxNombre.Enabled = true;
                     TBoxPrecio.Enabled = true;
                     TboxImagen.Enabled = true;
                     CboxCategoria.Enabled = true;
                     CboxMarca.Enabled = true;
+                    ArticuloGuardar = Lista;
                 }
                 else
                 {
@@ -67,17 +74,17 @@ namespace TP2_Valenzuela_Elias
             }
         }
 
-        private void ClickAgregar(object sender, EventArgs e)
+        private void ClickModificar(object sender, EventArgs e)
         {
             try
             {
                 ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-                List<Articulo> Lista;
+
                 Articulo articulo = new Articulo();
                 if (TBoxCodigo.Text.Length > 0)
                 {
-                    Lista = articuloNegocio.Buscar(TBoxCodigo.Text);
-                    articulo.ID = (int)Lista[0].ID;
+
+                    articulo.ID = (int)ArticuloGuardar[0].ID;
                     articulo.Codigo = TBoxCodigo.Text;
                     articulo.Nombre = TBoxNombre.Text;
                     articulo.Descripcion = TBoxDescripcion.Text;
