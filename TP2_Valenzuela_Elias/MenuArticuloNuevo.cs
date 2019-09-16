@@ -85,7 +85,7 @@ namespace TP2_Valenzuela_Elias
                 articulo.Imagen = TboxImagen.Text;
                 articulo.Precio = Convert.ToDecimal(TBoxPrecio.Text);
                 articuloNegocio.Agregar(articulo);
-                MessageBox.Show("El Articulo se modifico de manera correcta", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("El Articulo se creo de manera correcta", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 Dispose();
             }
             catch (Exception ex)
