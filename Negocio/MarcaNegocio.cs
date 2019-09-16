@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Dominio;
+using Negocio;
 
 namespace Negocio
 {
@@ -14,22 +15,14 @@ namespace Negocio
         {
             List<Marca> Listado = new List<Marca>();
             Marca MarcaAUX;
-
-            SqlCommand Comando = new SqlCommand();
-            SqlConnection Conexion = new SqlConnection();
-            SqlDataReader Lector;
+            AccesoDatos Datos = new AccesoDatos();
             try
             {
-                Conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
-                Comando.CommandType = System.Data.CommandType.Text;
-                Comando.CommandText = "Select M.Id, M.Descripcion from MARCAS as M";
-                Comando.Connection = Conexion;
-                Conexion.Open();
-                Lector = Comando.ExecuteReader();
-
-                while (Lector.Read())
+                Datos.SetearQuery("Select M.Id, M.Descripcion from MARCAS as M");
+                Datos.EjecutarLector();
+                while (Datos.Lector.Read())
                 {
-                    MarcaAUX = new Marca((int)Lector["Id"], (string)Lector["Descripcion"]);
+                    MarcaAUX = new Marca((int)Datos.Lector["Id"], (string)Datos.Lector["Descripcion"]);
                     Listado.Add(MarcaAUX);
                 }
                 return Listado;
@@ -41,7 +34,7 @@ namespace Negocio
             }
             finally
             {
-                Conexion.Close();
+                Datos.CerrarConexion();
             }
         }
     }

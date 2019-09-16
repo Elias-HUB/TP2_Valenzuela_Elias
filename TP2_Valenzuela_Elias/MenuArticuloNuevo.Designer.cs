@@ -132,7 +132,6 @@
             this.TBoxNombre.Name = "TBoxNombre";
             this.TBoxNombre.Size = new System.Drawing.Size(157, 26);
             this.TBoxNombre.TabIndex = 9;
-            this.TBoxNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValLetNum);
             // 
             // TBoxDescripcion
             // 
@@ -142,7 +141,6 @@
             this.TBoxDescripcion.Name = "TBoxDescripcion";
             this.TBoxDescripcion.Size = new System.Drawing.Size(345, 55);
             this.TBoxDescripcion.TabIndex = 10;
-            this.TBoxDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValLetNum);
             // 
             // TboxImagen
             // 
@@ -225,7 +223,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "MenuArticuloNuevo";
-            this.Text = "Articulo";
+            this.Text = "Alta de Articulo";
             this.Load += new System.EventHandler(this.MenuArticuloNuevo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

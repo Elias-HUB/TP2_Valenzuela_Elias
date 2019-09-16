@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
+using Negocio;
 using System.Data.SqlClient;
 
 
@@ -15,22 +16,15 @@ namespace Negocio
         {
             List<Categoria> Listado = new List<Categoria>();
             Categoria CatAUX;
-
-            SqlCommand Comando = new SqlCommand();
-            SqlConnection Conexion = new SqlConnection();
-            SqlDataReader Lector;
+            AccesoDatos Datos = new AccesoDatos();
             try
             {
-                Conexion.ConnectionString = "data source=.\\FRGP_PROG; initial catalog =CATALOGO_DB; integrated security=sspi";
-                Comando.CommandType = System.Data.CommandType.Text;
-                Comando.CommandText = "Select M.Id, M.Descripcion from Categorias as M";
-                Comando.Connection = Conexion;
-                Conexion.Open();
-                Lector = Comando.ExecuteReader();
+                Datos.SetearQuery("Select M.Id, M.Descripcion from Categorias as M");
+                Datos.EjecutarLector();
 
-                while (Lector.Read())
+                while (Datos.Lector.Read())
                 {
-                    CatAUX = new Categoria((int)Lector["Id"], (string)Lector["Descripcion"]);
+                    CatAUX = new Categoria((int)Datos.Lector["Id"], (string)Datos.Lector["Descripcion"]);
                     Listado.Add(CatAUX);
                 }
                 return Listado;
@@ -42,7 +36,7 @@ namespace Negocio
             }
             finally
             {
-                Conexion.Close();
+                Datos.CerrarConexion();
             }
         }
     }

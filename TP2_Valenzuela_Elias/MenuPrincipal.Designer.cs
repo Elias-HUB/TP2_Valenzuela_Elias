@@ -40,14 +40,12 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.TStripBtnConsulta = new System.Windows.Forms.ToolStripDropDownButton();
             this.TStripBtnConsultaOpc1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.CTSConCriteOp1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.CTSConCriteOp2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TStripMenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // TStripMenuPrincipal
             // 
-            this.TStripMenuPrincipal.BackColor = System.Drawing.Color.SteelBlue;
+            this.TStripMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(220)))));
             this.TStripMenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TStripBtnArticulo,
             this.toolStripSeparator1,
@@ -77,7 +75,7 @@
             // 
             this.TStripBtnArticuloOpc1.Image = global::TP2_Valenzuela_Elias.Properties.Resources.filenew;
             this.TStripBtnArticuloOpc1.Name = "TStripBtnArticuloOpc1";
-            this.TStripBtnArticuloOpc1.Size = new System.Drawing.Size(180, 22);
+            this.TStripBtnArticuloOpc1.Size = new System.Drawing.Size(125, 22);
             this.TStripBtnArticuloOpc1.Text = "Nuevo";
             this.TStripBtnArticuloOpc1.Click += new System.EventHandler(this.CliclArticuloNuevo);
             // 
@@ -85,7 +83,7 @@
             // 
             this.TStripBtnArticuloOpc2.Image = global::TP2_Valenzuela_Elias.Properties.Resources.editar;
             this.TStripBtnArticuloOpc2.Name = "TStripBtnArticuloOpc2";
-            this.TStripBtnArticuloOpc2.Size = new System.Drawing.Size(180, 22);
+            this.TStripBtnArticuloOpc2.Size = new System.Drawing.Size(125, 22);
             this.TStripBtnArticuloOpc2.Text = "Modificar";
             this.TStripBtnArticuloOpc2.Click += new System.EventHandler(this.CliclModificar);
             // 
@@ -93,7 +91,7 @@
             // 
             this.TStripBtnArticuloOpc3.Image = global::TP2_Valenzuela_Elias.Properties.Resources.delete;
             this.TStripBtnArticuloOpc3.Name = "TStripBtnArticuloOpc3";
-            this.TStripBtnArticuloOpc3.Size = new System.Drawing.Size(180, 22);
+            this.TStripBtnArticuloOpc3.Size = new System.Drawing.Size(125, 22);
             this.TStripBtnArticuloOpc3.Text = "Eliminar";
             this.TStripBtnArticuloOpc3.Click += new System.EventHandler(this.ClickEliminar);
             // 
@@ -128,7 +126,7 @@
             // 
             // TStripBtnConsulta
             // 
-            this.TStripBtnConsulta.BackColor = System.Drawing.Color.SteelBlue;
+            this.TStripBtnConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(220)))));
             this.TStripBtnConsulta.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.TStripBtnConsulta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TStripBtnConsultaOpc1});
@@ -141,36 +139,21 @@
             // 
             // TStripBtnConsultaOpc1
             // 
-            this.TStripBtnConsultaOpc1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CTSConCriteOp1,
-            this.CTSConCriteOp2});
             this.TStripBtnConsultaOpc1.Image = global::TP2_Valenzuela_Elias.Properties.Resources.editfind;
             this.TStripBtnConsultaOpc1.Name = "TStripBtnConsultaOpc1";
             this.TStripBtnConsultaOpc1.Size = new System.Drawing.Size(134, 22);
             this.TStripBtnConsultaOpc1.Text = "Por Criterio";
-            // 
-            // CTSConCriteOp1
-            // 
-            this.CTSConCriteOp1.Name = "CTSConCriteOp1";
-            this.CTSConCriteOp1.Size = new System.Drawing.Size(118, 22);
-            this.CTSConCriteOp1.Text = "Codigo";
-            this.CTSConCriteOp1.Click += new System.EventHandler(this.ClickBuscar);
-            // 
-            // CTSConCriteOp2
-            // 
-            this.CTSConCriteOp2.Name = "CTSConCriteOp2";
-            this.CTSConCriteOp2.Size = new System.Drawing.Size(118, 22);
-            this.CTSConCriteOp2.Text = "Nombre";
+            this.TStripBtnConsultaOpc1.Click += new System.EventHandler(this.ClickConsultaCri);
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.TStripMenuPrincipal);
             this.Name = "MenuPrincipal";
-            this.Text = "MenuPrincial";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TStripMenuPrincipal.ResumeLayout(false);
             this.TStripMenuPrincipal.PerformLayout();
             this.ResumeLayout(false);
@@ -191,7 +174,5 @@
         private System.Windows.Forms.ToolStripMenuItem TStripBtnArticuloOpc3;
         private System.Windows.Forms.ToolStripMenuItem TStripBtnListadoOpc1;
         private System.Windows.Forms.ToolStripMenuItem TStripBtnConsultaOpc1;
-        private System.Windows.Forms.ToolStripMenuItem CTSConCriteOp1;
-        private System.Windows.Forms.ToolStripMenuItem CTSConCriteOp2;
     }
 }

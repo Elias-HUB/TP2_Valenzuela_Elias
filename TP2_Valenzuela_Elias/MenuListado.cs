@@ -19,7 +19,7 @@ namespace TP2_Valenzuela_Elias
             InitializeComponent();
         }
 
-        private void MenuListado_Load(object sender, EventArgs e)
+        public void MenuListado_Load(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             List<Articulo> Lista;
@@ -29,12 +29,13 @@ namespace TP2_Valenzuela_Elias
                 DGVMenuListado.DataSource= Lista;
                 DGVMenuListado.Columns[0].Visible = false;
                 DGVMenuListado.Columns[6].Visible = false;
+                DGVMenuListado.Columns[8].Visible = false;
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
         }
+
     }
 }

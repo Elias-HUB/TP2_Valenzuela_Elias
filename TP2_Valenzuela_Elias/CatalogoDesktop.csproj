@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListadoBorrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoBorrar.Designer.cs">
+      <DependentUpon>ListadoBorrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuArticuloBorrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ListadoBorrar.resx">
+      <DependentUpon>ListadoBorrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuArticuloBorrar.resx">
       <DependentUpon>MenuArticuloBorrar.cs</DependentUpon>
     </EmbeddedResource>

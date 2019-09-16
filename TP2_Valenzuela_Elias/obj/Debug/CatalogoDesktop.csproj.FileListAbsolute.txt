@@ -44,3 +44,4 @@ C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\TP2_Valenzuela_Elias\obj\Debug\C
 C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\TP2_Valenzuela_Elias\obj\Debug\CatalogoDesktop.csproj.CopyComplete
 C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\TP2_Valenzuela_Elias\obj\Debug\TP2_Valenzuela_Elias.exe
 C:\Users\Elias\Desktop\Git\TP2_Valenzuela_Elias\TP2_Valenzuela_Elias\obj\Debug\TP2_Valenzuela_Elias.pdb
+G:\Proyectos\TP2_Valenzuela_Elias\TP2_Valenzuela_Elias\obj\Debug\TP2_Valenzuela_Elias.ListadoBorrar.resources

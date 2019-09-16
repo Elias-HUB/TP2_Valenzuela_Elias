@@ -36,20 +36,22 @@
             // 
             this.DGVMenuListado.AllowUserToAddRows = false;
             this.DGVMenuListado.AllowUserToDeleteRows = false;
-            this.DGVMenuListado.AllowUserToOrderColumns = true;
+            this.DGVMenuListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            this.DGVMenuListado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.DGVMenuListado.BackgroundColor = System.Drawing.Color.White;
             this.DGVMenuListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVMenuListado.Location = new System.Drawing.Point(-1, -3);
+            this.DGVMenuListado.Location = new System.Drawing.Point(0, -1);
             this.DGVMenuListado.Name = "DGVMenuListado";
             this.DGVMenuListado.ReadOnly = true;
-            this.DGVMenuListado.Size = new System.Drawing.Size(801, 385);
+            this.DGVMenuListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVMenuListado.Size = new System.Drawing.Size(857, 385);
             this.DGVMenuListado.TabIndex = 0;
             // 
             // MenuListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 380);
+            this.ClientSize = new System.Drawing.Size(856, 380);
             this.Controls.Add(this.DGVMenuListado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MenuListado";

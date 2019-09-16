@@ -16,5 +16,6 @@ namespace Dominio
         public Categoria Categoria { get; set; }
         public string Imagen { get; set; }
         public Decimal Precio { get; set; }
+        public Boolean Borrado { get; set; }
     }
 }

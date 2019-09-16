@@ -45,6 +45,8 @@
             this.LblCodigo = new System.Windows.Forms.Label();
             this.BtnBorrar = new System.Windows.Forms.Button();
             this.PBoxArticulo = new System.Windows.Forms.PictureBox();
+            this.TboxId = new System.Windows.Forms.TextBox();
+            this.BtnListado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +77,7 @@
             this.BtnCancelar.TabIndex = 49;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
-            this.BtnCancelar.Click += new System.EventHandler(this.cliclCancelar);
+            this.BtnCancelar.Click += new System.EventHandler(this.CliclCancelar);
             // 
             // BtnBuscar
             // 
@@ -209,11 +211,12 @@
             this.BtnBorrar.TabIndex = 52;
             this.BtnBorrar.Text = "Eliminar";
             this.BtnBorrar.UseVisualStyleBackColor = true;
-            this.BtnBorrar.Click += new System.EventHandler(this.clickBorrar);
+            this.BtnBorrar.Click += new System.EventHandler(this.ClickBorrar);
             // 
             // PBoxArticulo
             // 
             this.PBoxArticulo.Enabled = false;
+            this.PBoxArticulo.ErrorImage = global::TP2_Valenzuela_Elias.Properties.Resources.NoLogo;
             this.PBoxArticulo.Image = global::TP2_Valenzuela_Elias.Properties.Resources.NoLogo;
             this.PBoxArticulo.Location = new System.Drawing.Point(598, 26);
             this.PBoxArticulo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -223,11 +226,31 @@
             this.PBoxArticulo.TabIndex = 43;
             this.PBoxArticulo.TabStop = false;
             // 
+            // TboxId
+            // 
+            this.TboxId.Location = new System.Drawing.Point(12, 292);
+            this.TboxId.Name = "TboxId";
+            this.TboxId.Size = new System.Drawing.Size(29, 26);
+            this.TboxId.TabIndex = 76;
+            this.TboxId.Visible = false;
+            // 
+            // BtnListado
+            // 
+            this.BtnListado.Location = new System.Drawing.Point(454, 26);
+            this.BtnListado.Name = "BtnListado";
+            this.BtnListado.Size = new System.Drawing.Size(83, 36);
+            this.BtnListado.TabIndex = 75;
+            this.BtnListado.Text = "Listado";
+            this.BtnListado.UseVisualStyleBackColor = true;
+            this.BtnListado.Click += new System.EventHandler(this.BtnListado_Click);
+            // 
             // MenuArticuloBorrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 320);
+            this.Controls.Add(this.TboxId);
+            this.Controls.Add(this.BtnListado);
             this.Controls.Add(this.BtnBorrar);
             this.Controls.Add(this.TBoxCategoria);
             this.Controls.Add(this.TboxMarca);
@@ -246,8 +269,9 @@
             this.Controls.Add(this.LblNombre);
             this.Controls.Add(this.LblCodigo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
             this.Name = "MenuArticuloBorrar";
-            this.Text = "MenuArticuloBorrar";
+            this.Text = "Borrar Articulo";
             ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -273,5 +297,7 @@
         private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label LblCodigo;
         private System.Windows.Forms.Button BtnBorrar;
+        public System.Windows.Forms.TextBox TboxId;
+        private System.Windows.Forms.Button BtnListado;
     }
 }

@@ -46,6 +46,8 @@
             this.TboxImagen = new System.Windows.Forms.TextBox();
             this.CboxCategoria = new System.Windows.Forms.ComboBox();
             this.CboxMarca = new System.Windows.Forms.ComboBox();
+            this.BtnListado = new System.Windows.Forms.Button();
+            this.TboxId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,7 @@
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(339, 19);
+            this.BtnBuscar.Location = new System.Drawing.Point(314, 19);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(83, 36);
             this.BtnBuscar.TabIndex = 65;
@@ -88,6 +90,7 @@
             this.TBoxCodigo.Name = "TBoxCodigo";
             this.TBoxCodigo.Size = new System.Drawing.Size(157, 26);
             this.TBoxCodigo.TabIndex = 61;
+            this.TBoxCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValLetNum);
             // 
             // TBoxPrecio
             // 
@@ -97,6 +100,7 @@
             this.TBoxPrecio.Name = "TBoxPrecio";
             this.TBoxPrecio.Size = new System.Drawing.Size(100, 26);
             this.TBoxPrecio.TabIndex = 64;
+            this.TBoxPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValNumeros);
             // 
             // TBoxDescripcion
             // 
@@ -190,6 +194,7 @@
             // 
             // PBoxArticulo
             // 
+            this.PBoxArticulo.ErrorImage = global::TP2_Valenzuela_Elias.Properties.Resources.NoLogo;
             this.PBoxArticulo.Image = global::TP2_Valenzuela_Elias.Properties.Resources.NoLogo;
             this.PBoxArticulo.Location = new System.Drawing.Point(583, 19);
             this.PBoxArticulo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -228,11 +233,31 @@
             this.CboxMarca.Size = new System.Drawing.Size(157, 28);
             this.CboxMarca.TabIndex = 71;
             // 
+            // BtnListado
+            // 
+            this.BtnListado.Location = new System.Drawing.Point(417, 19);
+            this.BtnListado.Name = "BtnListado";
+            this.BtnListado.Size = new System.Drawing.Size(83, 36);
+            this.BtnListado.TabIndex = 73;
+            this.BtnListado.Text = "Listado";
+            this.BtnListado.UseVisualStyleBackColor = true;
+            this.BtnListado.Click += new System.EventHandler(this.ClickListado);
+            // 
+            // TboxId
+            // 
+            this.TboxId.Location = new System.Drawing.Point(2, 288);
+            this.TboxId.Name = "TboxId";
+            this.TboxId.Size = new System.Drawing.Size(29, 26);
+            this.TboxId.TabIndex = 74;
+            this.TboxId.Visible = false;
+            // 
             // MenuArticuloModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 316);
+            this.Controls.Add(this.TboxId);
+            this.Controls.Add(this.BtnListado);
             this.Controls.Add(this.CboxCategoria);
             this.Controls.Add(this.CboxMarca);
             this.Controls.Add(this.TboxImagen);
@@ -252,8 +277,9 @@
             this.Controls.Add(this.LblNombre);
             this.Controls.Add(this.LblCodigo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
             this.Name = "MenuArticuloModificar";
-            this.Text = "MenuArticuloModificar";
+            this.Text = "Modificar Articulo";
             ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -265,10 +291,6 @@
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.TextBox TBoxCodigo;
-        private System.Windows.Forms.TextBox TBoxPrecio;
-        private System.Windows.Forms.TextBox TBoxDescripcion;
-        private System.Windows.Forms.TextBox TBoxNombre;
         private System.Windows.Forms.PictureBox PBoxArticulo;
         private System.Windows.Forms.Label LblImagen;
         private System.Windows.Forms.Label LblPrecio;
@@ -277,8 +299,14 @@
         private System.Windows.Forms.Label LblDescripcion;
         private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label LblCodigo;
-        private System.Windows.Forms.TextBox TboxImagen;
-        private System.Windows.Forms.ComboBox CboxCategoria;
-        private System.Windows.Forms.ComboBox CboxMarca;
+        private System.Windows.Forms.Button BtnListado;
+        public System.Windows.Forms.TextBox TBoxCodigo;
+        public System.Windows.Forms.TextBox TBoxPrecio;
+        public System.Windows.Forms.TextBox TBoxDescripcion;
+        public System.Windows.Forms.TextBox TBoxNombre;
+        public System.Windows.Forms.TextBox TboxImagen;
+        public System.Windows.Forms.ComboBox CboxCategoria;
+        public System.Windows.Forms.ComboBox CboxMarca;
+        public System.Windows.Forms.TextBox TboxId;
     }
 }

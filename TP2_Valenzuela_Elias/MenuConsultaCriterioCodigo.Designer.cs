@@ -28,237 +28,166 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.TBoxCodigo = new System.Windows.Forms.TextBox();
-            this.TBoxPrecio = new System.Windows.Forms.TextBox();
-            this.TBoxDescripcion = new System.Windows.Forms.TextBox();
-            this.TBoxNombre = new System.Windows.Forms.TextBox();
-            this.LblImagen = new System.Windows.Forms.Label();
-            this.LblPrecio = new System.Windows.Forms.Label();
-            this.LblCategoria = new System.Windows.Forms.Label();
-            this.LblMarca = new System.Windows.Forms.Label();
-            this.LblDescripcion = new System.Windows.Forms.Label();
-            this.LblNombre = new System.Windows.Forms.Label();
-            this.LblCodigo = new System.Windows.Forms.Label();
-            this.TboxMarca = new System.Windows.Forms.TextBox();
-            this.TBoxCategoria = new System.Windows.Forms.TextBox();
-            this.BtnBuscar = new System.Windows.Forms.Button();
-            this.PBoxArticulo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).BeginInit();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.DGVConsulta = new System.Windows.Forms.DataGridView();
+            this.TxtBusqueda = new System.Windows.Forms.Label();
+            this.TBoxBusqueda = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVConsulta)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnCancelar
+            // dataGridViewTextBoxColumn1
             // 
-            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelar.Location = new System.Drawing.Point(696, 251);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(87, 36);
-            this.BtnCancelar.TabIndex = 33;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.UseVisualStyleBackColor = true;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
-            // TBoxCodigo
+            // dataGridViewTextBoxColumn2
             // 
-            this.TBoxCodigo.Location = new System.Drawing.Point(138, 25);
-            this.TBoxCodigo.MaxLength = 10;
-            this.TBoxCodigo.Name = "TBoxCodigo";
-            this.TBoxCodigo.Size = new System.Drawing.Size(157, 26);
-            this.TBoxCodigo.TabIndex = 25;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Codigo";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // TBoxPrecio
+            // dataGridViewTextBoxColumn3
             // 
-            this.TBoxPrecio.Enabled = false;
-            this.TBoxPrecio.Location = new System.Drawing.Point(138, 251);
-            this.TBoxPrecio.MaxLength = 9;
-            this.TBoxPrecio.Name = "TBoxPrecio";
-            this.TBoxPrecio.Size = new System.Drawing.Size(100, 26);
-            this.TBoxPrecio.TabIndex = 29;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nombre";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // TBoxDescripcion
+            // dataGridViewTextBoxColumn4
             // 
-            this.TBoxDescripcion.Enabled = false;
-            this.TBoxDescripcion.Location = new System.Drawing.Point(138, 105);
-            this.TBoxDescripcion.MaxLength = 74;
-            this.TBoxDescripcion.Multiline = true;
-            this.TBoxDescripcion.Name = "TBoxDescripcion";
-            this.TBoxDescripcion.Size = new System.Drawing.Size(345, 55);
-            this.TBoxDescripcion.TabIndex = 27;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Descripcion";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Descripcion";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // TBoxNombre
+            // dataGridViewTextBoxColumn5
             // 
-            this.TBoxNombre.Enabled = false;
-            this.TBoxNombre.Location = new System.Drawing.Point(138, 65);
-            this.TBoxNombre.MaxLength = 15;
-            this.TBoxNombre.Name = "TBoxNombre";
-            this.TBoxNombre.Size = new System.Drawing.Size(157, 26);
-            this.TBoxNombre.TabIndex = 26;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Marca";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Marca";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // LblImagen
+            // dataGridViewTextBoxColumn6
             // 
-            this.LblImagen.AutoSize = true;
-            this.LblImagen.Enabled = false;
-            this.LblImagen.Location = new System.Drawing.Point(692, 171);
-            this.LblImagen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblImagen.Name = "LblImagen";
-            this.LblImagen.Size = new System.Drawing.Size(63, 20);
-            this.LblImagen.TabIndex = 23;
-            this.LblImagen.Text = "Imagen";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Categoria";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Categoria";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // LblPrecio
+            // dataGridViewTextBoxColumn7
             // 
-            this.LblPrecio.AutoSize = true;
-            this.LblPrecio.Enabled = false;
-            this.LblPrecio.Location = new System.Drawing.Point(21, 254);
-            this.LblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblPrecio.Name = "LblPrecio";
-            this.LblPrecio.Size = new System.Drawing.Size(53, 20);
-            this.LblPrecio.TabIndex = 22;
-            this.LblPrecio.Text = "Precio";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Imagen";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Imagen";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
             // 
-            // LblCategoria
+            // dataGridViewTextBoxColumn8
             // 
-            this.LblCategoria.AutoSize = true;
-            this.LblCategoria.Enabled = false;
-            this.LblCategoria.Location = new System.Drawing.Point(21, 214);
-            this.LblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblCategoria.Name = "LblCategoria";
-            this.LblCategoria.Size = new System.Drawing.Size(78, 20);
-            this.LblCategoria.TabIndex = 21;
-            this.LblCategoria.Text = "Categoria";
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Precio";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // LblMarca
+            // dataGridViewCheckBoxColumn1
             // 
-            this.LblMarca.AutoSize = true;
-            this.LblMarca.Enabled = false;
-            this.LblMarca.Location = new System.Drawing.Point(21, 174);
-            this.LblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblMarca.Name = "LblMarca";
-            this.LblMarca.Size = new System.Drawing.Size(53, 20);
-            this.LblMarca.TabIndex = 20;
-            this.LblMarca.Text = "Marca";
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Borrado";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Borrado";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn1.Visible = false;
             // 
-            // LblDescripcion
+            // DGVConsulta
             // 
-            this.LblDescripcion.AutoSize = true;
-            this.LblDescripcion.Enabled = false;
-            this.LblDescripcion.Location = new System.Drawing.Point(21, 108);
-            this.LblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDescripcion.Name = "LblDescripcion";
-            this.LblDescripcion.Size = new System.Drawing.Size(92, 20);
-            this.LblDescripcion.TabIndex = 19;
-            this.LblDescripcion.Text = "Descripción";
+            this.DGVConsulta.AllowUserToAddRows = false;
+            this.DGVConsulta.AllowUserToDeleteRows = false;
+            this.DGVConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGVConsulta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.DGVConsulta.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(220)))));
+            this.DGVConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVConsulta.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DGVConsulta.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.DGVConsulta.Location = new System.Drawing.Point(12, 73);
+            this.DGVConsulta.MultiSelect = false;
+            this.DGVConsulta.Name = "DGVConsulta";
+            this.DGVConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVConsulta.Size = new System.Drawing.Size(828, 385);
+            this.DGVConsulta.TabIndex = 0;
+            this.DGVConsulta.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Seleccionar);
             // 
-            // LblNombre
+            // TxtBusqueda
             // 
-            this.LblNombre.AutoSize = true;
-            this.LblNombre.Enabled = false;
-            this.LblNombre.Location = new System.Drawing.Point(21, 68);
-            this.LblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(65, 20);
-            this.LblNombre.TabIndex = 18;
-            this.LblNombre.Text = "Nombre";
+            this.TxtBusqueda.AutoSize = true;
+            this.TxtBusqueda.Location = new System.Drawing.Point(258, 9);
+            this.TxtBusqueda.Name = "TxtBusqueda";
+            this.TxtBusqueda.Size = new System.Drawing.Size(82, 20);
+            this.TxtBusqueda.TabIndex = 1;
+            this.TxtBusqueda.Text = "Busqueda";
             // 
-            // LblCodigo
+            // TBoxBusqueda
             // 
-            this.LblCodigo.AutoSize = true;
-            this.LblCodigo.Enabled = false;
-            this.LblCodigo.Location = new System.Drawing.Point(21, 28);
-            this.LblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblCodigo.Name = "LblCodigo";
-            this.LblCodigo.Size = new System.Drawing.Size(59, 20);
-            this.LblCodigo.TabIndex = 17;
-            this.LblCodigo.Text = "Código";
+            this.TBoxBusqueda.Location = new System.Drawing.Point(141, 41);
+            this.TBoxBusqueda.Name = "TBoxBusqueda";
+            this.TBoxBusqueda.Size = new System.Drawing.Size(308, 26);
+            this.TBoxBusqueda.TabIndex = 2;
+            this.TBoxBusqueda.TextChanged += new System.EventHandler(this.TBoxBusqueda_TextChanged);
             // 
-            // TboxMarca
+            // label1
             // 
-            this.TboxMarca.Enabled = false;
-            this.TboxMarca.Location = new System.Drawing.Point(138, 171);
-            this.TboxMarca.MaxLength = 15;
-            this.TboxMarca.Name = "TboxMarca";
-            this.TboxMarca.Size = new System.Drawing.Size(157, 26);
-            this.TboxMarca.TabIndex = 34;
-            // 
-            // TBoxCategoria
-            // 
-            this.TBoxCategoria.Enabled = false;
-            this.TBoxCategoria.Location = new System.Drawing.Point(138, 211);
-            this.TBoxCategoria.MaxLength = 15;
-            this.TBoxCategoria.Name = "TBoxCategoria";
-            this.TBoxCategoria.Size = new System.Drawing.Size(157, 26);
-            this.TBoxCategoria.TabIndex = 35;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Location = new System.Drawing.Point(337, 20);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(83, 36);
-            this.BtnBuscar.TabIndex = 32;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
-            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
-            // 
-            // PBoxArticulo
-            // 
-            this.PBoxArticulo.Enabled = false;
-            this.PBoxArticulo.Image = global::TP2_Valenzuela_Elias.Properties.Resources.NoLogo;
-            this.PBoxArticulo.Location = new System.Drawing.Point(657, 20);
-            this.PBoxArticulo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.PBoxArticulo.Name = "PBoxArticulo";
-            this.PBoxArticulo.Size = new System.Drawing.Size(132, 132);
-            this.PBoxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBoxArticulo.TabIndex = 24;
-            this.PBoxArticulo.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(455, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Doble Click para seleccionar";
             // 
             // MenuConsultaCriterioCodigo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 314);
-            this.Controls.Add(this.TBoxCategoria);
-            this.Controls.Add(this.TboxMarca);
-            this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnBuscar);
-            this.Controls.Add(this.TBoxCodigo);
-            this.Controls.Add(this.TBoxPrecio);
-            this.Controls.Add(this.TBoxDescripcion);
-            this.Controls.Add(this.TBoxNombre);
-            this.Controls.Add(this.PBoxArticulo);
-            this.Controls.Add(this.LblImagen);
-            this.Controls.Add(this.LblPrecio);
-            this.Controls.Add(this.LblCategoria);
-            this.Controls.Add(this.LblMarca);
-            this.Controls.Add(this.LblDescripcion);
-            this.Controls.Add(this.LblNombre);
-            this.Controls.Add(this.LblCodigo);
+            this.ClientSize = new System.Drawing.Size(852, 470);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TBoxBusqueda);
+            this.Controls.Add(this.TxtBusqueda);
+            this.Controls.Add(this.DGVConsulta);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "MenuConsultaCriterioCodigo";
-            this.Text = "MenuConsultaCriterioCodigo";
-            ((System.ComponentModel.ISupportInitialize)(this.PBoxArticulo)).EndInit();
+            this.Text = "Consulta de Articulos";
+            this.Load += new System.EventHandler(this.MenuConsultaCriterioCodigo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.TextBox TBoxCodigo;
-        private System.Windows.Forms.TextBox TBoxPrecio;
-        private System.Windows.Forms.TextBox TBoxDescripcion;
-        private System.Windows.Forms.TextBox TBoxNombre;
-        private System.Windows.Forms.PictureBox PBoxArticulo;
-        private System.Windows.Forms.Label LblImagen;
-        private System.Windows.Forms.Label LblPrecio;
-        private System.Windows.Forms.Label LblCategoria;
-        private System.Windows.Forms.Label LblMarca;
-        private System.Windows.Forms.Label LblDescripcion;
-        private System.Windows.Forms.Label LblNombre;
-        private System.Windows.Forms.Label LblCodigo;
-        private System.Windows.Forms.TextBox TboxMarca;
-        private System.Windows.Forms.TextBox TBoxCategoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridView DGVConsulta;
+        private System.Windows.Forms.Label TxtBusqueda;
+        private System.Windows.Forms.TextBox TBoxBusqueda;
+        private System.Windows.Forms.Label label1;
     }
 }

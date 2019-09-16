@@ -12,27 +12,26 @@ using Negocio;
 
 namespace TP2_Valenzuela_Elias
 {
-    public partial class MenuConsultaCriterioCodigo : Menu
+    public partial class ListadoBorrar : Menu
     {
-        private MenuArticuloModificar padre;
+        private MenuArticuloBorrar padre;
         private List<Articulo> Lista;
-        private List<Articulo> ListaAux;     
+        private List<Articulo> ListaAux;
 
-        public MenuConsultaCriterioCodigo(MenuArticuloModificar Parametro)
+        public ListadoBorrar()
+        {
+            InitializeComponent();
+        }
+
+        public ListadoBorrar(MenuArticuloBorrar Parametro)
         {
             InitializeComponent();
             padre = Parametro;
         }
 
-        public MenuConsultaCriterioCodigo()
-        {
-            InitializeComponent();
-        }
-
         private void CargarDatos()
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-
             try
             {
                 Lista = articuloNegocio.Listar();
@@ -74,7 +73,7 @@ namespace TP2_Valenzuela_Elias
                 MessageBox.Show(ex.ToString());
             }
         }
-        
+
         private void Seleccionar(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -82,10 +81,7 @@ namespace TP2_Valenzuela_Elias
                 padre.Busqueda(int.Parse(DGVConsulta.CurrentRow.Cells[0].Value.ToString()));
                 Dispose();
             }
-            catch (NullReferenceException)
-            {
 
-            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());

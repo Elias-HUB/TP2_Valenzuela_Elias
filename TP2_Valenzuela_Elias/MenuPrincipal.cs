@@ -46,5 +46,11 @@ namespace TP2_Valenzuela_Elias
             MenuArticuloModificar menuArticuloModificar = new MenuArticuloModificar();
             menuArticuloModificar.ShowDialog();
         }
+
+        private void ClickConsultaCri(object sender, EventArgs e)
+        {
+            MenuConsultaCriterioCodigo menuConsultaCriterioCodigo = new MenuConsultaCriterioCodigo();
+            menuConsultaCriterioCodigo.ShowDialog();
+        }
     }
 }

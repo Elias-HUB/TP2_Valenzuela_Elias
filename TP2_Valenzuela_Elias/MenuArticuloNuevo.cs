@@ -40,30 +40,20 @@ namespace TP2_Valenzuela_Elias
             if (Char.IsNumber(e.KeyChar))
             {
                 e.Handled = false;
+
             }
             else if (Char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }
-            else if (e.KeyChar == '.')
+            else if (e.KeyChar == ',')
             {
                 e.Handled = false;
             }
-
             else
             {
-                MessageBox.Show("Por Favor, solo se aceptan numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Por Favor solo se aceptan Numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 e.Handled = true;
-            }
-        }
-
-        private void ValLetras(object sender, KeyPressEventArgs e)
-        {
-
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                e.Handled = true;
-                return;
             }
         }
 
@@ -94,8 +84,8 @@ namespace TP2_Valenzuela_Elias
                 articulo.Categoria = (Categoria)CboxCategoria.SelectedItem;
                 articulo.Imagen = TboxImagen.Text;
                 articulo.Precio = Convert.ToDecimal(TBoxPrecio.Text);
-
                 articuloNegocio.Agregar(articulo);
+                MessageBox.Show("El Articulo se modifico de manera correcta", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 Dispose();
             }
             catch (Exception ex)
