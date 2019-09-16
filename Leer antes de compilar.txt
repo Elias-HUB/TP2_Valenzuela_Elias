@@ -1,0 +1,9 @@
+Bienvenido Usuario
+
+Por favor antes de ejecutar el programa recomiendo que aa carpeta imagenes que se encuentra en el proyecto se deje en el disco c:\ 
+para poder mostrar las imagenes de manera correcta.
+
+Respecto al Script ( Base de Datos Catalogo ) recomiendo que se utilice este ya que agrege un campo para para el borrado logico.
+
+Saludos.
+Atte Equipo REX.
